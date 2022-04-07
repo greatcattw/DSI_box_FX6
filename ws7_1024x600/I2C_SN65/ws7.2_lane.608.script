@@ -1,0 +1,96 @@
+	//PLL off 
+	S 5A 0D 00 P	
+	
+	//sw reset
+	S 5A 09 01 P
+
+	//lvds clk.range [0] 1=dphy
+	S 5A 0A 05 P	
+	//dsi_clk_divider 330/51=6 => 101 101*8=5*8=40=28h
+	//160/51= 3 => 010 => shl 3 => 2 * 8 = 16 = 10h
+	//200/51= 4 => 011 => shl 3 => 3 * 8 = 24 = 18h
+ 	S 5A 0B 28 P	
+
+	
+	//10 set lanes 3 lanes[4,3] => 01 =>  ,[6,5]=01=20h [0] 0: SoT tolerated
+	S 5A 10 30 P
+
+	//12 set cha clk range 330/5=66=42h
+	//150/5=30=1Eh
+	S 5A 12 3C P
+	
+	//18 LVDS signal format
+	S 5A 18 78 P	
+
+
+	//1024=400h
+	//1280=500
+	//20 hor.lo
+	S 5A 20 00 P
+	//21 hor.hi
+	S 5A 21 04 P
+
+	//28 sync_delay.lo
+	S 5A 28 30 P
+	//29 sync_delay.hi
+	S 5A 29 00 P	
+	
+	
+	//480=1E0h
+	//600=258h
+	//800=329
+	//24.tp ver.lo
+	S 5A 24 20 P
+	//25.tp ver.hi
+	S 5A 25 03 P
+
+	
+	
+	//322=142
+	//128=80h
+	//2c.tp h.sync.pluse.width.L
+	S 5A 2C 80 P
+	//2d.tp h.sync.pluse.width.H	
+	S 5A 2D 00 P
+	
+	//35=23
+	//16=10h
+	//30.tp v.sync.pluse.width.L
+	S 5A 30 10 P
+	//31.tp v.sync.pluse.width.H	
+	S 5A 31 00 P
+	
+	
+	//34.tp hor.back.porch
+	S 5A 34 01 P
+	//36.tp ver.back.porch	
+	S 5A 36 01 P
+
+	//38.tp hor.front.porch
+	S 5A 38 01 P
+	//3A.tp ver.front.porch	
+	S 5A 3A 01 P
+
+	
+	//enable test patten
+	//S 5A 3C 10 P	
+	
+	//PLL enable 
+	S 5A 0D 01 P
+	
+	
+	S 5A 00 S 5B RX P	
+	S 5A 01 S 5B RX P
+	S 5A 02 S 5B RX P	
+	S 5A 03 S 5B RX P	
+	S 5A 04 S 5B RX P	
+	S 5A 05 S 5B RX P	
+	S 5A 06 S 5B RX P
+	S 5A 07 S 5B RX P	
+	S 5A 08 S 5B RX P	
+	
+	S 5A 0A S 5B RX P	
+	S 5A E5 S 5B RX P	
+	
+	
+	

@@ -1,0 +1,18 @@
+
+
+https://blog.csdn.net/weixin_42503397/article/details/81486036
+
+Caution !!!
+back-light uses voltage source instead of current source.
+Thus,
+(1)sw2.1,DIP1,set on, disable sn65 EVK back-light current source.
+(2)sn65 EVK, default uses 5V power, thus, J15 is set [1-2], J15.3 is BOARD_5V, connect J15.3 to J3.1(BL_PWR).
+
+I did not do above but ws7 worked fine in 2018. It was strange.
+
+---
+
+Buy LCD 
+
+https://item.taobao.com/item.htm?spm=a1z09.2.0.0.67002e8dPKEmiK&id=37101133110&_u=629ibs0m6497
+https://detail.tmall.com/item.htm?spm=a230r.1.14.21.7a8853b8foqtKn&id=656531786451&ns=1&abbucket=15
