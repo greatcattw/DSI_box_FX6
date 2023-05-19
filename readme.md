@@ -15,3 +15,13 @@ The i2c.script is txt file and gedit can open them.
 
 ## ILI9488_320x480
 ![pic](ILI9488_320x480/P_20220328_164053_1.jpg) <BR>
+  
+## ILI9806_480x800
+![pic](ILI9806_480x80/P_20220328_152201.jpg) <BR>
+  
+## TN92_800x480
+![pic](TN92_800x480/P_20220328_165620_1.jpg) <BR>
+  
+## ws7_1024x600
+![pic](ws7_1024x600/P_20220407_105413_1.jpg) <BR>
+  
